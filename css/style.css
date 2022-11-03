@@ -1,5 +1,17 @@
-* {
+body {
   background-color: #ffadad;
+}
+
+footer {
+  background-color: #caffbf;
+}
+
+nav {
+  background-color: #9bf6ff;
+}
+
+.navbar-toggler {
+  color: #fdffb6;
 }
 
 /*# sourceMappingURL=style.css.map */

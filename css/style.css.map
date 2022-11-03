@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/componentes/_body.scss","../scss/base/_colores.scss"],"names":[],"mappings":"AAAA;EACI,kBCDO","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/componentes/_body.scss","../scss/componentes/_footer.scss","../scss/componentes/_navbar.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;;;ACDJ;EACI;;;AAGJ;EAAgB","file":"style.css"}

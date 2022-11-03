@@ -1,3 +1,5 @@
-*{
-    background-color: $arcoiris;
+body{
+    background-color: nth($arcoiris,1);
 }
+
+
