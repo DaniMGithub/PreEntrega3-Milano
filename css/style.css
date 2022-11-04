@@ -7,11 +7,47 @@ footer {
 }
 
 nav {
-  background-color: #9bf6ff;
+  background-color: #ffd6a5;
 }
 
-.navbar-toggler {
-  color: #fdffb6;
+.nav-item1 {
+  background-color: lightgreen;
+}
+
+.nav-link1 {
+  background-color: lightgreen;
+}
+
+.dropdown-item1 {
+  background-color: aquamarine;
+}
+
+.dpd {
+  background-color: lightcoral !important;
+}
+.dpd .dropdown-toggle {
+  background-color: aqua !important;
+}
+.dpd .dropdown-toggle ul {
+  background-color: aquamarine !important;
+}
+.dpd .dropdown-toggle ul li {
+  background-color: aquamarine !important;
+}
+.dpd .dropdown-toggle ul li a {
+  background-color: aquamarine !important;
+}
+
+.btn66 {
+  background-color: aquamarine !important;
+}
+
+.dropdown-menu {
+  background-color: aqua !important;
+}
+
+.dropdown-item:hover {
+  background-color: bisque !important;
 }
 
 /*# sourceMappingURL=style.css.map */

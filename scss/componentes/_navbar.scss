@@ -1,7 +1,31 @@
 nav{
-    background-color: nth($arcoiris,5);       
+    background-color: nth($arcoiris, 2);
+
+}
+   .nav-item1{
+    background-color: lightgreen;
+   } 
+.nav-link1{
+    background-color: lightgreen;
 }
 
-.navbar-toggler{color: nth($arcoiris,3);
+.dropdown-item1{background-color: aquamarine;}
+.dpd{
+    background-color: lightcoral !important;
+    .dropdown-toggle{
+        background-color: aqua !important;
+ul {background-color: aquamarine !important;
+li {background-color: aquamarine !important;
+a {background-color: aquamarine !important;
 
-} 
+}
+}
+}
+}
+}
+
+.btn66{background-color: aquamarine !important;}
+.dropdown-menu{background-color: aqua !important;}
+.dropdown-item:hover{background-color: bisque !important;}
+
+
