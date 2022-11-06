@@ -1,10 +1,15 @@
-$arcoiris:
-#ffadad,
-#ffd6a5, 
-#fdffb6,
-#caffbf,
-#9bf6ff,
-#a0c4ff,
-#bdb2ff,
-#ffc6ff,
-#fffffc;
+$color-natural:lightgreen;
+$color-loco: lightpink;
+$color-naturalis: lightyellow;
+$color-loquis: #ff758f;
+
+
+@mixin color-scheme($text, $bg){
+    background-color: $bg;
+    color: $text;
+}
+
+$scheme-uno: $color-natural, $color-loco;
+$scheme-gradiente: $color-naturalis, $color-loquis;
+
+

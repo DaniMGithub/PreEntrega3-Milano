@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- social media icons  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <!-- Mi CSS  -->
 <link rel="stylesheet" href="./css/style.css">
 <title>Biblioteca central</title>
@@ -23,6 +26,7 @@
 <body>
     <!-- Encabezado -->
     <header>
+      <div class="rosita" style="background-image: url('./images/rosita.jpg');"> 
         <!-- iconos de redes sociales -->
             <div class="d-flex flex-row-reverse">
                 <div class="p-2"><i class='bx bx-rss bx-md bx-tada-hover'></i></div>
@@ -32,14 +36,17 @@
             </div>
              <div class="row">
                 <div class="col-sm-6">
+                  
                     <h1>Biblioteca Central</h1>
                     <h2>Universidad Nacional de Lorem</h2>
               </div>         
         <!-- gif de bicho saltando -->
                 <div class="col-sm-6 justify-content-end align-self-end">
-                    <img class="oog-review-section__image bicho"  alt="Monster jumping" src="https://cdn.teachyourmonster.org/assets/oog/pages/rff/animation-f97a193a35de2c5bd09ec2d0a08cb37773083ca95dbd9bde9b81cf18ddbc708f.gif">
+                    <img class="oog-review-section__image bicho"  alt="Monster jumping" src="https://cdn.teachyourmonster.org/assets/oog/pages/rff/animation-f97a193a35de2c5bd09ec2d0a08cb37773083ca95dbd9bde9b81cf18ddbc708f.gif" width="10%">
                 </div>
-           </div>
+           </div>    
+          </div>          
+           
        </header>
       
       <!-- nav- menú principal -->
@@ -52,11 +59,11 @@
              </button>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item1 dropdown1">
-                   <a class="nav-link1 dropdown-toggle" href="./pages/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="./pages/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Acerca de</a>              
                    <ul class="dropdown-menu">
-                     <li><a class="dropdown-item1" href="./pages/about.html#instalaciones">Nuestras instalaciones</a></li>
+                     <li><a class="dropdown-item" href="./pages/about.html#instalaciones">Nuestras instalaciones</a></li>
                      <li><a class="dropdown-item" href="./pages/about.html#horarios">Horarios</a></li>
                      <li><hr class="dropdown-divider"></li>
                      <li><a class="dropdown-item" href="./pages/about.html#sobre">Sobre la biblioteca</a></li>
@@ -105,10 +112,10 @@
                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    Recursos digitales</a>              
                    <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="https://elibro.net/">Libros digitales (eLibro)</a></li>
-                     <li><a class="dropdown-item" href="https://www.medicapanamericana.com/mx">Libros digitales (Panamericana)</a></li>
-                     <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCsbHuxXLhYvl-NO1o3i5E0A/videos">Tutoriales de acceso</a></li>
-                    <li><a class="dropdown-item" href="https://biblioteca.mincyt.gob.ar/">Biblioteca del MINCyT</a></li>
+                     <li><a class="dropdown-item" href="https://elibro.net/" target="_blank">Libros digitales (eLibro)</a></li>
+                     <li><a class="dropdown-item" href="https://www.medicapanamericana.com/mx" target="_blank">Libros digitales (Panamericana)</a></li>
+                     <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCsbHuxXLhYvl-NO1o3i5E0A/videos" target="_blank">Tutoriales de acceso</a></li>
+                    <li><a class="dropdown-item" href="https://biblioteca.mincyt.gob.ar/" target="_blank">Biblioteca del MINCyT</a></li>
                    </ul>
                  </li> 
                  <li class="nav-item dropdown">
@@ -138,18 +145,138 @@
 
 <!-- Fin nav -->
     
-    <main>
-      <div class="dropdown dpd">
-        <button class="btn66 btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+
+<!-- Carrusel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/dibujo33.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Concurso de dibujos creados con AI</h5>
+        <p>Nuestros usuarios participaron del concurso! vea las imágenes nominadas aquí</p>
       </div>
-    </main>
+    </div>
+    <div class="carousel-item">
+      <img src="images/universidad33.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Noticias de la Universidad Lorem</h5>
+        <p>Enterate las últimas noticias aquí.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/biblio33.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Conoce nuestras instalaciones!</h5>
+        <p>Compartimos imágenes y mapa de nuestra biblioteca</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</main>
+
+<!-- Cards -->
+<article class="align-items-stretch cartas">
+    <div class="row cartas">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="https://placekitten.com/316/316" class="card-img-top" alt="..."> <div class="card-body">
+            
+           <!-- <img src="images/juan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">  -->
+            <h5 class="card-title">Historia del Libro y las bibliotecas</h5>
+            <p class="card-text">Entrevista a Alejandro E. Parada</p>
+            <button class="custom-btn btn-5"><span>Leer</span></button>
+         </div>
+        </div>
+      </div>  
+    </div>     
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="images/dibujo2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Novedades en la sección Infantil</h5>
+          <p class="card-text">Conoce los nuevos libros.</p>
+          <button class="custom-btn btn-5"><span>Conocer</span></button>
+          
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/dibujo21.png" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">¿Es verdad que un robot que puede leer?</h5>
+        <p class="card-text" >Foro debate sobre el futuro de la IA</p>
+        <button class="custom-btn btn-5"><span>Investigar</span></button>
+
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <img src="images/dibujo4.png" class="card-img-top" alt="...">
+      <div class="card-body" style="height: 25%";>
+      <h5 class="card-title">Conoce la colección de nuestros autores locales</h5>
+      <p class="card-text">Disponible para toda la comunidad.</p>
+      <button class="custom-btn btn-5"><span>Visitar</span></button>
+     </div>
+  </div>
+</div>  
+</div>
+</div>
+
+</article>
+
+<!-- articulo con video -->
+<aside>
+<div class="clearfix" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<br>
+<img src="images/andrea.jpg" class="img-fluid col-md-6 float-md-end mb-3 ms-md-3" alt="Responsive image woman">
+<br>
+<h4>Curso Derechos de Autor en las Bibliotecas universitarias</h4>
+<br>
+<p>
+Se espera que, al finalizar el recorrido del curso, los participantes logren:</p> <br> <p>
+● Distinguir las características y funciones de una biblioteca digital y de un
+repositorio institucional; <br>
+● Identificar fuentes de información relevantes y de calidad disponibles en soporte
+digital; <br>
+● Recuperar y usar efectivamente información necesaria a través de bibliotecas
+digitales; <br>
+● Colaborar en la conformación de repositorios institucionales de acceso abierto
+para el archivo, preservación, distribución y acceso de la producción académica
+y científica y en particular de objetos de aprendizaje; <br>
+● Comprender los aspectos legales relacionados con la creación y uso de
+contenidos digitales, incluyendo políticas institucionales en cuanto a producción
+intelectual, depósito y cesión de derechos de autor y su impacto en la producción
+de contenidos.  <br>
+
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum iusto dolor natus optio. Eos dolor quam voluptate molestiae delectus!
+</p>
+<button class="btn btn-helloworld">Hello World</button>
+
+</div>
+</aside>
 
 <!-- Footer -->
 <footer class="footer container-fluid foot" data-aos="fade-up" data-aos-anchor-placement="top-bottom">

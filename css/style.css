@@ -1,53 +1,32 @@
 body {
-  background-color: #ffadad;
+  background-color: #c9184a;
+  font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
 }
 
-footer {
-  background-color: #caffbf;
+header .rosita {
+  width: 100%;
 }
 
 nav {
-  background-color: #ffd6a5;
+  background-color: #ff4d6d;
+  color: #c9184a;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
-.nav-item1 {
-  background-color: lightgreen;
+nav li {
+  background-color: lightpink;
+  color: lightgreen;
+  text-decoration-color: #ff758f;
+  border-radius: 5px;
 }
-
-.nav-link1 {
-  background-color: lightgreen;
-}
-
-.dropdown-item1 {
-  background-color: aquamarine;
-}
-
-.dpd {
-  background-color: lightcoral !important;
-}
-.dpd .dropdown-toggle {
-  background-color: aqua !important;
-}
-.dpd .dropdown-toggle ul {
-  background-color: aquamarine !important;
-}
-.dpd .dropdown-toggle ul li {
-  background-color: aquamarine !important;
-}
-.dpd .dropdown-toggle ul li a {
-  background-color: aquamarine !important;
-}
-
-.btn66 {
-  background-color: aquamarine !important;
-}
-
-.dropdown-menu {
-  background-color: aqua !important;
-}
-
-.dropdown-item:hover {
-  background-color: bisque !important;
+nav li a {
+  background-color: #ff758f;
+  color: lightyellow;
+  text-decoration-color: #ff758f;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

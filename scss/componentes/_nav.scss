@@ -1,0 +1,24 @@
+nav{
+    @include color-scheme(#c9184a, #ff4d6d);
+    
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+        li{
+        @include color-scheme($scheme-uno ...);
+        text-decoration-color: $color-loquis;
+        border-radius: 5px;
+
+        a{
+            @include color-scheme($scheme-gradiente ...);
+        text-decoration-color: $color-loquis;
+        border-radius: 5px;
+
+        }
+       
+    }
+    
+}
+
