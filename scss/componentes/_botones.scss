@@ -1,0 +1,7 @@
+.btn-3{
+    @include color-scheme($scheme-rosaformal ...);
+   
+}
+.btn-3:hover{
+    @include color-scheme($scheme-verde ...);
+}

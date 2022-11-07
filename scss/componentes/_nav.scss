@@ -1,5 +1,5 @@
 nav{
-    @include color-scheme(#c9184a, #ff4d6d);
+    @include color-scheme($scheme-rosabb...) ;
     
     margin-top: 1%;
     margin-bottom: 1%;
@@ -7,15 +7,17 @@ nav{
     margin-right: 2%;
     
         li{
-        @include color-scheme($scheme-uno ...);
+        @include color-scheme($scheme-rosabb ...);
         text-decoration-color: $color-loquis;
         border-radius: 5px;
 
         a{
-            @include color-scheme($scheme-gradiente ...);
+            @include color-scheme($scheme-rosabb ...);
         text-decoration-color: $color-loquis;
         border-radius: 5px;
 
+        }&hover{
+            @include color-scheme($scheme-rosaformal ...);
         }
        
     }
