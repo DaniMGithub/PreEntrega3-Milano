@@ -1,7 +1,13 @@
 .btn-3{
     @include color-scheme($scheme-rosaformal ...);
-   
 }
 .btn-3:hover{
     @include color-scheme($scheme-verde ...);
 }
+
+.btn-5{
+    @include color-scheme($scheme-tierra...);
+}
+.btn-5:hover{
+        @include color-scheme($scheme-formal ...);
+    }
