@@ -1,0 +1,1179 @@
+body{
+    background-color: lightcyan;
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+   
+}
+
+/* animación gradiente del header */
+header {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        overflow-x: hidden;
+       
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+/* h1 y h2 del header */
+h1{
+    margin: 1%;
+    margin-left: 1%;
+    color: greenyellow;
+}
+h2{
+     margin: 1%;
+     margin-left: 1%;
+}
+/* gift el bicho saltando */
+.bicho{
+   align-self: end;
+   width: 20%;
+   overflow-x: hidden;
+ 
+   }
+
+/* nav */
+.navbar ul li:hover > ul
+{
+    display:block
+}
+
+.navbar .busqueda{
+  padding: 0px;
+}
+
+/* animación para las cards */
+
+.cartas{
+    .align-items-stretch{
+       height: 100%;
+    }
+    
+
+}
+.col-sm{
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+
+.minav{
+    background-color: lightskyblue;
+}
+
+.pilly{
+    background-color: cornflowerblue;
+}
+
+.carousel{
+    margin-bottom: 2%;
+}
+/* animación para las cards con hover */
+
+.card{
+         transition: all 0.3s;
+         position: relative;
+         border: .054f5e;
+         justify-content: space-around;
+       
+       }
+
+.card:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+         z-index: 2;
+         cursor: pointer;            
+         justify-content: space-around;
+        
+        
+        }
+
+
+.div_1{
+    margin: 0px;
+    padding: 0px;    
+}
+
+.mibtn:hover{
+    background-color: lightseagreen;
+}
+
+
+/** ==================== * tabla de la pagina servicios =======================*/
+
+.titulino h2{
+  text-align: center;
+  margin-top: 3%;
+}
+.body {
+  background: #232222;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #fefefe;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.link {
+  color: #4477CC;
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+
+a.link:hover {
+  color: lightseagreen;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.tabs {
+  position: relative;
+  margin: 40px auto;
+  width: 1024px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.tabs input {
+  position: absolute;
+  z-index: 1000;
+  width: 25%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  margin: 0;
+}
+
+.tabs input#tab-2 {
+  left: 25%;
+}
+
+.tabs input#tab-3 {
+  left: 50%;
+}
+
+.tabs input#tab-4 {
+  left: 75%;
+}
+
+.tabs label {
+  overflow: hidden;
+  background: #4477CC;
+  color: #fefefe;
+  font-size: 15px;
+  line-height: 50px;
+  height: 60px;
+  position: relative;
+  top: 0;
+  padding: 0 20px;
+  float: left;
+  display: block;
+  width: 25%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+
+.tabs label:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.tabs label:after {
+  overflow: hidden;
+  content: '';
+  background: #fefefe;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+}
+
+.tabs input:hover + label {
+  background: lightseagreen;
+  /*e08f24*/
+}
+
+.tabs label:first-of-type {
+  z-index: 4;
+}
+
+.tab-label-2 {
+  z-index: 4;
+}
+
+.tab-label-3 {
+  z-index: 3;
+}
+
+.tab-label-4 {
+  z-index: 2;
+}
+
+.tabs input:checked + label {
+  background: #fefefe;
+  color: #1a1a1a;
+  z-index: 6;
+}
+
+.content {
+  height: auto;
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 5;
+  background: #fefefe;
+  top: -10px;
+  box-sizing: border-box;
+}
+
+.content div {
+  position: relative;
+  float: left;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  background: #fefefe;
+}
+
+.content div h2 {
+  margin-top: 0;
+}
+
+.tabs .tab-selector-1:checked ~ .content .content-1,
+.tabs .tab-selector-2:checked ~ .content .content-2,
+.tabs .tab-selector-3:checked ~ .content .content-3,
+.tabs .tab-selector-4:checked ~ .content .content-4 {
+  z-index: 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  width: 100%;
+  height: auto;
+  padding: 8%;
+}
+
+.content div h2 {
+  color: #4477CC;
+}
+
+.content div p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  margin: 0;
+  color: #777;
+}
+
+
+/** ==================== * fin tabla de la pagina servicios =======================*/
+
+/** ==================== * Pagina historia timeline =======================*/
+
+.timeline {
+  position: relative;
+  display: block;
+  background-color: #f00;
+  height: 4px;
+  margin: 200px 50px;
+}
+
+.timeline::before, .timeline::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  border: 10px solid #f00;
+}
+
+.timeline::before {
+  left: -20px;
+}
+
+.timeline::after {
+  right: -10px;
+  border: 10px solid transparent;
+  border-radius: 30px;
+  border-right: 0;
+  border-left: 20px solid #f00;
+}
+
+.timeline li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 120px;
+  transform: rotate(-45deg);
+  top: -65px;
+ }
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  border: 3px solid #f00;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  background: #F0F0F0;
+}
+
+.timeline li span {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  width: 150px;
+}
+
+.timeline li:hover::before {
+  border: 4px solid #0f0;
+}
+
+.timeline li:hover span {
+  display: block;
+  transform: rotate(45deg);
+}
+
+/** ==================== * Pagina calidad ======================*/
+.politica{
+  margin-top: 3%;
+  background-color: lightpink;
+  text-align: justify;
+}
+
+.politica h2{
+  text-align: center;
+}
+.plan{
+  margin-top: 5%;
+  background-color: lightyellow;
+  text-align: justify;
+}
+
+.plan h2{
+  text-align: center;
+}
+/** ==================== * Pagina historia colores ======================*/
+.margen{
+  margin: 2%;
+}
+.history{ 
+  margin-top: 3%;
+  background-color: lightsalmon;
+  border-color: #e73c7e;
+  border-width: 1%;
+  padding: 3%;
+}
+.history h2{
+  text-align: center;
+}
+
+.colores{
+  margin: 5%;
+  margin-left: 5%;
+  margin-right: 2%;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+.section{
+  width: 100%;
+  position: relative;
+}
+#section1{
+  background:#f47070;
+  z-index: 10;
+}
+#section2{
+  background: #f5d36e;
+  z-index: 9;
+}
+#section3{
+  background: #f5f567;
+  z-index: 8;
+}
+#section4{
+  background: #83ec89;
+  z-index: 7;
+}
+#section5{
+  background: #f47070;
+  z-index: 6;
+}
+#section6{
+  background: #f5d36e;
+  z-index: 5;
+}
+.section::after{
+  content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	bottom: 0;
+}
+#section1::after, #section2::after, #section4::after{
+	transform-origin: left bottom;
+	transform: skewY(3deg);
+}
+#section3::after, #section5::after{
+	transform-origin: right bottom;
+	transform: skewY(-3deg);
+}
+.sectionInner{
+  height: auto;
+  display: block;
+  overflow: hidden;
+  padding: 200px 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/** ==================== * carrusel pagina about gatitios =======================*/
+#carouselExampleInterval{
+  width: 70%;
+  margin: 10%;
+}
+/** ==================== * Lista de Comentarios pagina calidad =======================*/
+
+
+.comments-container {
+overflow-x: hidden;
+ margin: 60px auto 15px;
+ width: 768px;
+}
+
+.comments-container h1 {
+ 
+ font-size: 36px;
+ color: #283035;
+ font-weight: 400;
+ overflow-x: hidden;
+}
+
+.comments-container h1 a {
+ font-size: 18px;
+ font-weight: 700;
+ overflow-x: hidden;
+}
+
+.comments-list {
+ margin-top: 30px;
+ position: relative;
+ overflow-x: hidden;
+}
+
+/*** Lineas / Detalles-----------------------*/
+.comments-list:before {
+ content: '';
+ width: 2px;
+ height: 100%;
+ background: #c7cacb;
+ position: absolute;
+ left: 32px;
+ top: 0;
+ overflow-x: hidden;
+}
+
+.comments-list:after {
+ content: '';
+ position: absolute;
+ background: #c7cacb;
+ bottom: 0;
+ left: 27px;
+ width: 7px;
+ height: 7px;
+ border: 3px solid #dee1e3;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+ overflow-x: hidden;
+}
+
+.reply-list:before, .reply-list:after {display: none;}
+.reply-list li:before {
+ content: '';
+ width: 60px;
+ height: 2px;
+ background: #c7cacb;
+ position: absolute;
+ top: 25px;
+ left: -55px;
+ overflow-x: hidden;
+}
+
+
+.comments-list li {
+ margin-bottom: 15px;
+ display: block;
+ position: relative;
+ overflow-x: hidden;
+}
+
+.comments-list li:after {
+ content: '';
+ display: block;
+ clear: both;
+ height: 0;
+ width: 0;
+ overflow-x: hidden;
+}
+
+.reply-list {
+ padding-left: 88px;
+ clear: both;
+ margin-top: 15px;
+ overflow-x: hidden;
+}
+/*** Avatar---------------------------*/
+.comments-list .comment-avatar {
+ width: 65px;
+ height: 65px;
+ position: relative;
+ z-index: 99;
+ float: left;
+ border: 3px solid #FFF;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+ -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+ box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+ overflow-x: hidden;
+}
+
+.comments-list .comment-avatar img {
+ width: 100%;
+ height: 100%;
+ overflow-x: hidden;
+}
+
+.reply-list .comment-avatar {
+ width: 50px;
+ height: 50px;
+ overflow-x: hidden;
+}
+
+.comment-main-level:after {
+ content: '';
+ width: 0;
+ height: 0;
+ display: block;
+ clear: both;
+ overflow-x: hidden;
+}
+/*** Caja del Comentario---------------------------*/
+.comments-list .comment-box {
+ width: 680px;
+ float: right;
+ position: relative;
+ -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+ -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+ box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+ overflow-x: hidden;
+}
+
+.comments-list .comment-box:before, .comments-list .comment-box:after {
+ content: '';
+ height: 0;
+ width: 0;
+ position: absolute;
+ display: block;
+ border-width: 10px 12px 10px 0;
+ border-style: solid;
+ border-color: transparent #FCFCFC;
+ top: 8px;
+ left: -11px;
+ overflow-x: hidden;
+}
+
+.comments-list .comment-box:before {
+ border-width: 11px 13px 11px 0;
+ border-color: transparent rgba(0,0,0,0.05);
+ left: -12px;
+ overflow-x: hidden;
+}
+
+.reply-list .comment-box {
+ width: 610px;
+ overflow-x: hidden;
+}
+.comment-box .comment-head {
+ background: #FCFCFC;
+ padding: 10px 12px;
+ border-bottom: 1px solid #E5E5E5;
+ overflow-x: hidden;
+ -webkit-border-radius: 4px 4px 0 0;
+ -moz-border-radius: 4px 4px 0 0;
+ border-radius: 4px 4px 0 0;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-head i {
+ float: right;
+ margin-left: 14px;
+ position: relative;
+ top: 2px;
+ color: #A6A6A6;
+ cursor: pointer;
+ -webkit-transition: color 0.3s ease;
+ -o-transition: color 0.3s ease;
+ transition: color 0.3s ease;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-head i:hover {
+ color: #03658c;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-name {
+ color: #283035;
+ font-size: 14px;
+ font-weight: 700;
+ float: left;
+ margin-right: 10px;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-name a {
+ color: #283035;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-head span {
+ float: left;
+ color: #999;
+ font-size: 13px;
+ position: relative;
+ top: 1px;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-content {
+ background: #FFF;
+ padding: 12px;
+ font-size: 15px;
+ color: #595959;
+ -webkit-border-radius: 0 0 4px 4px;
+ -moz-border-radius: 0 0 4px 4px;
+ border-radius: 0 0 4px 4px;
+ overflow-x: hidden;
+}
+
+.comment-box .comment-name.by-author, .comment-box .comment-name.by-author a {color: #03658c;}
+.comment-box .comment-name.by-author:after {
+ content: 'autor';
+ background: #03658c;
+ color: #FFF;
+ font-size: 12px;
+ padding: 3px 5px;
+ font-weight: 700;
+ margin-left: 10px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ overflow-x: hidden;
+}
+
+/** =====================* Responsive========================*/
+@media only screen and (max-width: 766px) {
+ .comments-container {
+   width: 480px;
+   overflow-x: hidden;
+ }
+
+ .comments-list .comment-box {
+   width: 390px;
+   overflow-x: hidden;
+ }
+
+ .reply-list .comment-box {
+   width: 320px;
+   overflow-x: hidden;
+ }
+}
+
+
+/* Fin opiniones pagina calidad */
+/* Pagina about */
+.abouti{
+  background-color: #e5b3fe;
+  text-align: justify;
+  padding: 3%;
+  margin: 2%;
+  overflow-x: hidden;
+}
+.abouti h2{
+  text-align: center;
+}
+.carro{
+  background-color: #ffee93;
+}
+.carro h2{
+  text-align: center;
+}
+.horario{
+background-color: #90f3ff;
+text-align: justify;
+}
+.horario h2{
+  text-align: center;
+  }
+/* FIN Pagina about */
+/* graficos pagina calidad */
+
+.grafico-container {
+  margin-bottom: 3%;
+}
+
+.titular {
+display: block;
+line-height: 60px;
+margin: 0;
+text-align: center;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+		.block {
+			margin: 25px 25px 0 0;
+			background: #394264;
+			border-radius: 5px;
+      float: left;
+      width: 300px;
+		}
+		/******************************************** LEFT CONTAINER *****************************************/
+		.left-container {}
+			.menu-box {
+				height: 360px;
+			}
+
+			.donut-chart-block {
+				overflow: hidden;
+			}
+				.donut-chart-block .titular {
+					padding: 10px 0;
+				}
+				.os-percentages li {
+					width: 75px; 
+					border-left: 1px solid #394264;
+					text-align: center;					
+					background: #50597b;
+				}
+					.os {
+						margin: 0;
+						padding: 10px 0 5px;
+						font-size: 15px;		
+					}
+						.os.ios {
+							border-top: 4px solid #e64c65;
+						}
+						.os.mac {
+							border-top: 4px solid #11a8ab;
+						}
+						.os.linux {
+							border-top: 4px solid #fcb150;
+						}
+						.os.win {
+							border-top: 4px solid #4fc4f6;
+						}
+					.os-percentage {
+						margin: 0;
+						padding: 0 0 15px 10px;
+						font-size: 25px;
+					}
+			.line-chart-block, .bar-chart-block {
+				height: 400px;
+			}
+				.line-chart {
+					height: 200px;
+					background: #11a8ab;
+				}
+				.time-lenght {
+					padding-top: 22px;
+					padding-left: 38px;
+         
+				}
+					.time-lenght-btn {
+						display: block;
+						width: 70px;
+						line-height: 32px;
+						background: #50597b;
+						border-radius: 5px;
+						font-size: 14px;
+						text-align: center;
+						margin-right: 5px;
+						-webkit-transition: background .3s;
+						transition: background .3s;
+					}
+						.time-lenght-btn:hover {
+							text-decoration: none;
+							background: #e64c65;
+						}
+				.month-data {
+					padding-top: 28px;
+				}
+					.month-data p {
+						display: inline-block;
+						margin: 0;
+						padding: 0 25px 15px;            
+						font-size: 16px;
+					}
+						.month-data p:last-child {
+							padding: 0 25px;
+              float: right;
+							font-size: 15px;
+						}
+						.increment {
+							color: #e64c65;
+						}
+
+/******************************************
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+ESTILOS PROPIOS DE LOS GRÄFICOS
+↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ 
+GRAFICO LINEAL
+******************************************/
+
+.grafico {
+  padding: 2rem 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 80%;
+}
+.grafico span {
+  display: block;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  height: 0;
+  border-top: 2px solid;
+  transform-origin: left center;
+}
+.grafico span > span {
+  left: 100%; bottom: 0;
+}
+[data-valor='25'] {width: 75px; transform: rotate(-45deg);}
+[data-valor='8'] {width: 24px; transform: rotate(65deg);}
+[data-valor='13'] {width: 39px; transform: rotate(-45deg);}
+[data-valor='5'] {width: 15px; transform: rotate(50deg);}
+[data-valor='23'] {width: 69px; transform: rotate(-70deg);}
+[data-valor='12'] {width: 36px; transform: rotate(75deg);}
+[data-valor='15'] {width: 45px; transform: rotate(-45deg);}
+
+[data-valor]:before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -4px;
+  bottom: -3px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+}
+[data-valor='23']:after {
+  content: '+' attr(data-valor) '%';
+  position: absolute;
+  right: -2.7rem;
+  top: -1.7rem;
+  padding: .3rem .5rem;
+  background: #50597B;
+  border-radius: .5rem;
+  transform: rotate(45deg);  
+}
+[class^='eje-'] {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  height: 80%;
+}
+.eje-x {
+  height: 2.5rem;
+}
+.eje-y li {
+  height: 25%;
+  border-top: 1px solid #777;
+}
+[data-ejeY]:before {
+  content: attr(data-ejeY);
+  display: inline-block;
+  width: 2rem;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  left: -2.5rem;
+  top: -.5rem;
+} 
+.eje-x li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+/******************************************
+GRAFICO CIRCULAR PIE CHART
+******************************************/
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+	margin: 0 auto 2rem;
+	border-radius: 100%
+ }
+p.center-date {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+	font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+.center-date span.scnd-font-color {
+ line-height: 0; 
+}
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+#porcion1 {
+    transform: rotate(0deg);
+  }
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    transform: rotate(76deg);
+  }
+#porcion2 {
+    transform: rotate(76deg);
+  }
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+  }
+#porcion3 {
+    transform: rotate(215deg);
+  }
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    transform: rotate(113deg);
+  }
+#porcionFin {
+    transform:rotate(-32deg);
+  }
+#porcionFin .quesito {
+    background-color: #FCB150;
+    transform: rotate(32deg);
+  }
+.nota-final {
+  clear: both;
+  color: #4FC4F6;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.nota-final strong {
+  color: #E64C65;
+}
+.nota-final a {
+  color: #FCB150;
+  font-size: inherit;
+}
+/**************************
+BAR-CHART
+**************************
+.grafico.bar-chart {
+  background: #3468AF;
+  padding: 0 1rem 2rem 1rem;
+  width: 100%;
+  height: 60%;
+  position: relative;
+  color: #fff;
+  font-size: 80%;
+}
+.bar-chart [class^='eje-'] {
+  padding: 0 1rem 0 2rem;
+  bottom: 1rem;
+}
+.bar-chart .eje-x {
+  bottom: 0;
+}
+ .bar-chart .eje-y li {
+  height: 20%;
+  border-top: 1px solid #fff;
+}
+.bar-chart .eje-x li {
+  width: 14%;
+  position: relative;
+  text-align: left;
+}
+.bar-chart .eje-x li i {
+  transform: rotatez(-45deg) translatex(-1rem);
+  transform-origin: 30% 60%;
+  display: block;
+}
+.bar-chart .eje-x li:before {
+  content: '';
+  position: absolute;
+  bottom: 1.9rem;
+  width: 70%;
+  right: 5%;
+  box-shadow: 3px 0 rgba(0,0,0,.1), 3px -3px rgba(0,0,0,.1);
+}
+.bar-chart .eje-x li:nth-child(1):before {
+  background: #E64C65;  
+  height: 570%;
+}
+.bar-chart .eje-x li:nth-child(2):before {
+  background: #11A8AB;  
+  height: 900%;
+}
+.bar-chart .eje-x li:nth-child(3):before {
+  background: #FCB150;  
+  height: 400%;
+}
+.bar-chart .eje-x li:nth-child(4):before {
+  background: #4FC4F6;  
+  height: 290%;
+}
+.bar-chart .eje-x li:nth-child(5):before {
+  background: #FFED0D;  
+  height: 720%;
+}
+.bar-chart .eje-x li:nth-child(6):before {
+  background: #F46FDA;  
+  height: 820%;
+}
+.bar-chart .eje-x li:nth-child(7):before {
+  background: #15BFCC;  
+  height: 520%;
+}
+
+/* FIN graficos pagina calidad */
+
+/* Formulario de contacto página Contacto 
+
+.contacto{
+  margin-top: 5%;
+  margin-bottom: 5%;
+    background: linear-gradient(-45deg, #cdb4db, lightpink, lightyellow);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .btn btn-primary{
+
+    }
+
+}
+
+
+
+/* footer */
+.foot{
+      background-color: lightgreen;
+      overflow-x: hidden;
+}
+.foot .col{
+ width: 50%;
+}
+
+.formularios{
+    margin-top: 2%;
+}
+
+.mapita{
+    margin-top: 2%;
+}
+
+/* gift el bicho saltando */
+.libri{
+    align-self: flex-end;
+    align-items: flex-end;
+    text-align: left;
+    width: 20%;
+    overflow-x: hidden;
+  
+    }

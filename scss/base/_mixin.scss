@@ -1,0 +1,27 @@
+@use "sass:string";
+
+
+$serif: font-family('Roboto Slab', serif);
+$sserif1: font-family('Montserrat', sans-serif);
+$sserif2: font-family('Quicksand', sans-serif);
+$china: font-family('Noto Serif TC', serif);
+
+
+
+@mixin txt-principal ($size, $color, $destacado, $pad, $dec) {
+    font-size: $size;
+    color: $color;
+    font-weight: $destacado;
+    padding: $pad;
+    text-decoration: $dec;
+
+    
+}
+
+.txt-main{
+    @include txt-principal(1em, $color-random, 2px ,2% , none, );
+}
+
+.txt-resaltar{
+    @include txt-principal(2em, $color-naturalo, 2% , none, none, );
+}
