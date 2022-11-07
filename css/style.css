@@ -1,3 +1,31 @@
+@charset "UTF-8";
+.carousel {
+  margin-bottom: 2%;
+}
+
+.cartas {
+  align-items: stretch;
+  height: 100%;
+}
+
+.col-sm {
+  border: 1px solid black;
+}
+
+/* animación para las cards con hover */
+.card {
+  transition: all 0.3s;
+  position: relative;
+  border: 0.054f5e;
+  justify-content: space-around;
+}
+.card :hover {
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
 body {
   background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
   color: black;
@@ -29,8 +57,8 @@ nav li a {
   text-decoration-color: #ff758f;
   border-radius: 5px;
 }
-nav lihover {
-  background-image: linear-gradient(to top left, #f9dbbd, #ffa5ab, #da627d, #a53860, #450920);
+nav li :hover {
+  background-image: linear-gradient(to top left, #cdb4db, #ffc8dd, #ffafcc, #bde0fe, #a2d2ff);
   color: black;
 }
 

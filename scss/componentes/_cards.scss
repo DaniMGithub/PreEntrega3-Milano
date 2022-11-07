@@ -1,0 +1,28 @@
+.carousel{
+    margin-bottom: 2%;
+}
+
+.cartas{
+    align-items: stretch;
+    height: 100%;
+    }.col-sm{
+    border: 1px solid black;
+}
+
+
+/* animación para las cards con hover */
+
+.card{
+    transition: all 0.3s;
+    position: relative;
+    border: .054f5e;
+    justify-content: space-around;     
+    :hover{  
+    transform: scale(1.1);
+     z-index: 2;
+     cursor: pointer;            
+     justify-content: space-around;
+
+}}
+
+

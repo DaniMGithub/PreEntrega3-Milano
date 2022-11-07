@@ -16,11 +16,12 @@ nav{
         text-decoration-color: $color-loquis;
         border-radius: 5px;
 
-        }&hover{
-            @include color-scheme($scheme-rosaformal ...);
+        }:hover{
+            @include color-scheme($scheme-pastel ...);
         }
        
     }
-    
 }
+    
+
 
