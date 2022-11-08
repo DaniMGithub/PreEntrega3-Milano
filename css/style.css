@@ -54,6 +54,24 @@
   color: black;
 }
 
+.accordion-button:is(.collapsed)::after {
+  box-shadow: 3px;
+  background-color: lightblue;
+}
+
+.accordion-button:not(.collapsed)::after {
+  box-shadow: none;
+  background-color: lightblue;
+}
+
+.accordion-button:is(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f000b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237400b8'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
 body {
   background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
   color: black;
