@@ -1,4 +1,5 @@
-body{
+.page-header{   
+   
     @include color-scheme($scheme-bg ...);
 
     overflow-x: hidden;
