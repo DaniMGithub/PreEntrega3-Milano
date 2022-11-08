@@ -5,7 +5,7 @@ body{
    
 }
 
-/* animación gradiente del header */
+/* animación gradiente del header 
 header {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
@@ -25,7 +25,7 @@ header {
             background-position: 0% 50%;
         }
     }
-/* h1 y h2 del header */
+/* h1 y h2 del header 
 h1{
     margin: 1%;
     margin-left: 1%;
@@ -35,13 +35,13 @@ h2{
      margin: 1%;
      margin-left: 1%;
 }
-/* gift el bicho saltando */
+/* gift el bicho saltando 
 .bicho{
    align-self: end;
    width: 20%;
    overflow-x: hidden;
  
-   }
+   } */
 
 /* nav */
 .navbar ul li:hover > ul

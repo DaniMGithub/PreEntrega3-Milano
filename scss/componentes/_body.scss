@@ -1,3 +1,7 @@
+*{
+    overflow-block: auto;
+    overflow-x: hidden;
+}
 .page-header{   
    
     @include color-scheme($scheme-bg ...);
@@ -12,3 +16,6 @@ header{
     }
 }
 
+.whity{
+    margin-top: 30%;
+}
