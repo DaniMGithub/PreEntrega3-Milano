@@ -1,14 +1,17 @@
-.btn-3{
-    @include color-scheme($scheme-rosaformal ...);
+.btn-11{
+    @include color-scheme($scheme-gradiente ...);
+   
 }
 .btn-3:hover{
-    @include color-scheme($scheme-verde ...);
+    @include color-scheme($scheme-rosaformal ...);
+  
+   
 }
 
 .btn-5{
-    @include color-scheme($scheme-tierra...);
+    @include color-scheme($scheme-suave...);
 }
 .btn-5:hover{
-        @include color-scheme($scheme-formal ...);
+        @include color-scheme($scheme-bg ...);
     }
 
