@@ -1,11 +1,12 @@
+/** ==================== * configuracion base de body =======================*/
 body{
-    background-color: lightcyan;
-    font-family: 'Mulish', sans-serif;
-    overflow-x: hidden;
-   
+  background-color: lightcyan;
+  font-family: 'Mulish', sans-serif;
+  overflow-x: hidden;
+ 
 }
 
-
+/** ==================== * animacion que ya no utilizaré, antes era de header =======================*/
 /* animación gradiente del header 
 header {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -44,6 +45,7 @@ h2{
  
    } */
 
+/** ==================== * barra de navegación configuración general - inicio =======================*/
 /* nav */
 .navbar ul li:hover > ul
 {
@@ -54,6 +56,7 @@ h2{
   padding: 0px;
 }
 
+/** ==================== * Página index configuración de cartas =======================*/
 /* animación para las cards */
 
 .cartas{
@@ -108,7 +111,8 @@ h2{
 .mibtn:hover{
     background-color: lightseagreen;
 }
-/** ==================== * animacion de la pagina servicios =======================*/
+/** ==================== *  inicio pagina servicios.html =======================*/
+/*** animacion de la pagina servicios*/
 .carti-loki{
   background: linear-gradient(-25deg, $scheme-formal, $scheme-tierra);
   background-size: 400% 400%;
@@ -130,7 +134,7 @@ h2{
  }
  /* Fin animacion*/
 
-/** ==================== * tabla de la pagina servicios =======================*/
+/**  tabla de la pagina servicios */
 
 .titulino h2{
   text-align: center;
@@ -318,12 +322,12 @@ p {
   margin: 0;
   color: #777;
 }
+/* fin tabla*/
 
+/** ==================== * fin pagina servicios =======================*/
 
-/** ==================== * fin tabla de la pagina servicios =======================*/
-
-/** ==================== * Pagina historia timeline =======================*/
-
+/** ==================== * Pagina historia.html =======================*/
+/* comienzo de linea de tiempo*/
 .timeline {
   position: relative;
   display: block;
@@ -392,8 +396,87 @@ p {
   display: block;
   transform: rotate(45deg);
 }
+/* fin linea de tiempo*/
+/** comienzo Pagina historia colores */
+.margen{
+  margin: 2%;
+}
+.history{ 
+  margin-top: 3%;
+  background-color: lightsalmon;
+  border-color: #e73c7e;
+  border-width: 1%;
+  padding: 3%;
+}
+.history h2{
+  text-align: center;
+}
 
-/** ==================== * Pagina calidad ======================*/
+.colores{
+  margin: 5%;
+  margin-left: 5%;
+  margin-right: 2%;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+.section{
+  width: 100%;
+  position: relative;
+}
+#section1{
+  background:#f47070;
+  z-index: 10;
+}
+#section2{
+  background: #f5d36e;
+  z-index: 9;
+}
+#section3{
+  background: #f5f567;
+  z-index: 8;
+}
+#section4{
+  background: #83ec89;
+  z-index: 7;
+}
+#section5{
+  background: #f47070;
+  z-index: 6;
+}
+#section6{
+  background: #f5d36e;
+  z-index: 5;
+}
+.section::after{
+  content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	bottom: 0;
+}
+#section1::after, #section2::after, #section4::after{
+	transform-origin: left bottom;
+	transform: skewY(3deg);
+}
+#section3::after, #section5::after{
+	transform-origin: right bottom;
+	transform: skewY(-3deg);
+}
+.sectionInner{
+  height: auto;
+  display: block;
+  overflow: hidden;
+  padding: 200px 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/** ==================== * FIn Pagina historia.html =======================*/
+/** ==================== * comienzo Pagina calidad ======================*/
 
   /* Animacion de organigrama */
 
@@ -479,89 +562,8 @@ p {
 .plan h2{
   text-align: center;
 }
-/** ==================== * Pagina historia colores ======================*/
-.margen{
-  margin: 2%;
-}
-.history{ 
-  margin-top: 3%;
-  background-color: lightsalmon;
-  border-color: #e73c7e;
-  border-width: 1%;
-  padding: 3%;
-}
-.history h2{
-  text-align: center;
-}
 
-.colores{
-  margin: 5%;
-  margin-left: 5%;
-  margin-right: 2%;
-  padding:0;
-  font-family: 'Roboto', sans-serif;
-}
-.section{
-  width: 100%;
-  position: relative;
-}
-#section1{
-  background:#f47070;
-  z-index: 10;
-}
-#section2{
-  background: #f5d36e;
-  z-index: 9;
-}
-#section3{
-  background: #f5f567;
-  z-index: 8;
-}
-#section4{
-  background: #83ec89;
-  z-index: 7;
-}
-#section5{
-  background: #f47070;
-  z-index: 6;
-}
-#section6{
-  background: #f5d36e;
-  z-index: 5;
-}
-.section::after{
-  content: '';
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	bottom: 0;
-}
-#section1::after, #section2::after, #section4::after{
-	transform-origin: left bottom;
-	transform: skewY(3deg);
-}
-#section3::after, #section5::after{
-	transform-origin: right bottom;
-	transform: skewY(-3deg);
-}
-.sectionInner{
-  height: auto;
-  display: block;
-  overflow: hidden;
-  padding: 200px 50px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-  font-size: 2em;
-}
 
-/** ==================== * carrusel pagina about gatitios =======================*/
-#carouselExampleInterval{
-  width: 70%;
-  margin: 10%;
-}
 /** ==================== * Lista de Comentarios pagina calidad =======================*/
 
 
@@ -822,32 +824,52 @@ overflow-x: hidden;
  }
 }
 
+/** =====================* /* Fin opiniones pagina calidad ========================*/
 
-/* Fin opiniones pagina calidad */
-/* Pagina about */
+/** =====================* Comienzo de Pagina about ========================*/
+/** * carrusel pagina about gatitios */
+#carouselExampleInterval{
+  width: 70%;
+align-self: center; /** * no me funcionaba alinearlo en el centro así que puse un padding */
+align-items: center;
+align-content: center;
+padding-left: 25%;
+}
+
+/* about -misión nesting */
 .abouti{
   background-color: #e5b3fe;
-  text-align: justify;
- 
+  text-align: justify; 
   overflow-x: hidden;
-}
-.abouti h2{
+  padding: 5%;
+.sobre{
   text-align: center;
-}
+  padding: 2%;
+  .p{
+    padding: 2%; 
+  }} }
+
+  /* carrusel de instalaciones nesting */
 .carro{
+  align-items: center;
   background-color: #ffee93;
-}
-.carro h2{
+  padding-bottom: 2%;
+.instalaciones{
   text-align: center;
-}
+  padding: 2%;
+}}
+
+/* horarios nesting */
 .horario{
 background-color: #90f3ff;
 text-align: justify;
-}
-.horario h2{
+.horarios{
   text-align: center;
-  }
-/* FIN Pagina about */
+  margin-top: 2%;
+  }}
+
+/** =====================* Fin de Pagina about ========================*/
+/** =====================* Comienzo de Pagina calidad ========================*/
 /* graficos pagina calidad */
 
 .grafico-container {
@@ -877,7 +899,8 @@ border-top-right-radius: 5px;
       float: left;
       width: 300px;
 		}
-		/******************************************** LEFT CONTAINER *****************************************/
+/* contenedor izquierdo */
+
 		.left-container {}
 			.menu-box {
 				height: 360px;
@@ -1204,6 +1227,8 @@ BAR-CHART
 }
 
 /* FIN graficos pagina calidad */
+/** =====================* Fin de Pagina Calidad.html ========================*/
+/** =====================* Comienzo de Pagina contacto.html ========================*/
 
 /* Formulario de contacto página Contacto  con animacion gradiente*/
 
@@ -1227,9 +1252,12 @@ BAR-CHART
     }
 
 }
-/* Fin formulario de contacto página Contacto  con animacion gradiente*/
+/* Fin formulario de contacto página Contacto*/
 
-/* Footer con animacion gradiente*/
+/** =====================* Fin de Pagina contacto.html ========================*/
+/** =====================* Comienzo de Footer de todas las páginas ========================*/
+
+/* Footer con animacion gradiente */
 
 .foot{
      background: linear-gradient(-45deg, $scheme-babypastel, $scheme-verde);
@@ -1251,20 +1279,20 @@ BAR-CHART
 
 }
 /* Fin animacion gradiente de footer*/
-
+/* columnas de footer*/
 .foot .col{
  width: 50%;
 }
-
+/* formulario suscripción a newsleter footer*/
 .formularios{
     margin-top: 2%;
 }
-
+/* iframe mapa de footer*/
 .mapita{
     margin-top: 2%;
 }
 
-/* gift el bicho saltando */
+/* gift el bicho saltando en la columna 3 */
 .libri{
     align-self: flex-end;
     align-items: flex-end;
@@ -1273,6 +1301,9 @@ BAR-CHART
     overflow-x: hidden;
   
     }
+
+/** =====================* Fin de Footer ========================*/
+/** =====================* Comienzo de botones universales ========================*/
 /* botones*/
     .custom-btnn {
       width: 130px;
@@ -1662,4 +1693,5 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
 .btn-8 span:hover:after {
   width: 100%;
 }
-  
+
+/** =====================* Fin de botones universales ========================*/

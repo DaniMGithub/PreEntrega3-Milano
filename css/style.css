@@ -97,12 +97,14 @@ nav li :hover {
   color: black;
 }
 
+/** ==================== * configuracion base de body =======================*/
 body {
   background-color: lightcyan;
   font-family: "Mulish", sans-serif;
   overflow-x: hidden;
 }
 
+/** ==================== * animacion que ya no utilizaré, antes era de header =======================*/
 /* animación gradiente del header 
 header {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -140,6 +142,7 @@ h2{
    overflow-x: hidden;
 
    } */
+/** ==================== * barra de navegación configuración general - inicio =======================*/
 /* nav */
 .navbar ul li:hover > ul {
   display: block;
@@ -149,6 +152,7 @@ h2{
   padding: 0px;
 }
 
+/** ==================== * Página index configuración de cartas =======================*/
 /* animación para las cards */
 .cartas .align-items-stretch {
   height: 100%;
@@ -196,7 +200,8 @@ h2{
   background-color: lightseagreen;
 }
 
-/** ==================== * animacion de la pagina servicios =======================*/
+/** ==================== *  inicio pagina servicios.html =======================*/
+/*** animacion de la pagina servicios*/
 .carti-loki {
   background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, white, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
   background-size: 400% 400%;
@@ -216,7 +221,7 @@ h2{
   }
 }
 /* Fin animacion*/
-/** ==================== * tabla de la pagina servicios =======================*/
+/**  tabla de la pagina servicios */
 .titulino h2 {
   text-align: center;
   margin-top: 3%;
@@ -405,8 +410,10 @@ p {
   color: #777;
 }
 
-/** ==================== * fin tabla de la pagina servicios =======================*/
-/** ==================== * Pagina historia timeline =======================*/
+/* fin tabla*/
+/** ==================== * fin pagina servicios =======================*/
+/** ==================== * Pagina historia.html =======================*/
+/* comienzo de linea de tiempo*/
 .timeline {
   position: relative;
   display: block;
@@ -476,86 +483,8 @@ p {
   transform: rotate(45deg);
 }
 
-/** ==================== * Pagina calidad ======================*/
-/* Animacion de organigrama */
-.organitograma {
-  background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, white, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  overflow-x: hidden;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* Fin animacion*/
-/* Animacion de plan estrategico */
-.plan {
-  background: linear-gradient(-25deg, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc, white, #ffffff, #84dcc6, #a5ffd6, #ffa69e, #ff686b);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  overflow-x: hidden;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* Fin animacion*/
-/* Animacion de politica */
-.politica {
-  background: linear-gradient(-25deg, white, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  overflow-x: hidden;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* Fin animacion*/
-.politica {
-  margin-top: 3%;
-  text-align: justify;
-}
-
-.politica h2 {
-  text-align: center;
-}
-
-.plan {
-  margin-top: 5%;
-  text-align: justify;
-}
-
-.plan h2 {
-  text-align: center;
-}
-
-/** ==================== * Pagina historia colores ======================*/
+/* fin linea de tiempo*/
+/** comienzo Pagina historia colores */
 .margen {
   margin: 2%;
 }
@@ -646,10 +575,84 @@ p {
   font-size: 2em;
 }
 
-/** ==================== * carrusel pagina about gatitios =======================*/
-#carouselExampleInterval {
-  width: 70%;
-  margin: 10%;
+/** ==================== * FIn Pagina historia.html =======================*/
+/** ==================== * comienzo Pagina calidad ======================*/
+/* Animacion de organigrama */
+.organitograma {
+  background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, white, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
+/* Animacion de plan estrategico */
+.plan {
+  background: linear-gradient(-25deg, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc, white, #ffffff, #84dcc6, #a5ffd6, #ffa69e, #ff686b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
+/* Animacion de politica */
+.politica {
+  background: linear-gradient(-25deg, white, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
+.politica {
+  margin-top: 3%;
+  text-align: justify;
+}
+
+.politica h2 {
+  text-align: center;
+}
+
+.plan {
+  margin-top: 5%;
+  text-align: justify;
+}
+
+.plan h2 {
+  text-align: center;
 }
 
 /** ==================== * Lista de Comentarios pagina calidad =======================*/
@@ -914,36 +917,55 @@ p {
     overflow-x: hidden;
   }
 }
-/* Fin opiniones pagina calidad */
-/* Pagina about */
+/** =====================* /* Fin opiniones pagina calidad ========================*/
+/** =====================* Comienzo de Pagina about ========================*/
+/** * carrusel pagina about gatitios */
+#carouselExampleInterval {
+  width: 70%;
+  align-self: center; /** * no me funcionaba alinearlo en el centro así que puse un padding */
+  align-items: center;
+  align-content: center;
+  padding-left: 25%;
+}
+
+/* about -misión nesting */
 .abouti {
   background-color: #e5b3fe;
   text-align: justify;
   overflow-x: hidden;
+  padding: 5%;
 }
-
-.abouti h2 {
+.abouti .sobre {
   text-align: center;
+  padding: 2%;
+}
+.abouti .sobre .p {
+  padding: 2%;
 }
 
+/* carrusel de instalaciones nesting */
 .carro {
+  align-items: center;
   background-color: #ffee93;
+  padding-bottom: 2%;
 }
-
-.carro h2 {
+.carro .instalaciones {
   text-align: center;
+  padding: 2%;
 }
 
+/* horarios nesting */
 .horario {
   background-color: #90f3ff;
   text-align: justify;
 }
-
-.horario h2 {
+.horario .horarios {
   text-align: center;
+  margin-top: 2%;
 }
 
-/* FIN Pagina about */
+/** =====================* Fin de Pagina about ========================*/
+/** =====================* Comienzo de Pagina calidad ========================*/
 /* graficos pagina calidad */
 .grafico-container {
   margin-bottom: 3%;
@@ -976,7 +998,7 @@ p {
   width: 300px;
 }
 
-/******************************************** LEFT CONTAINER *****************************************/
+/* contenedor izquierdo */
 .menu-box {
   height: 360px;
 }
@@ -1372,6 +1394,8 @@ BAR-CHART
 }
 
 /* FIN graficos pagina calidad */
+/** =====================* Fin de Pagina Calidad.html ========================*/
+/** =====================* Comienzo de Pagina contacto.html ========================*/
 /* Formulario de contacto página Contacto  con animacion gradiente*/
 .contacto {
   margin-top: 5%;
@@ -1392,8 +1416,10 @@ BAR-CHART
     background-position: 0% 50%;
   }
 }
-/* Fin formulario de contacto página Contacto  con animacion gradiente*/
-/* Footer con animacion gradiente*/
+/* Fin formulario de contacto página Contacto*/
+/** =====================* Fin de Pagina contacto.html ========================*/
+/** =====================* Comienzo de Footer de todas las páginas ========================*/
+/* Footer con animacion gradiente */
 .foot {
   background: linear-gradient(-45deg, white, #b0f2b4, #baf2e9, #bad7f2, #f2bac9, #f2e2ba, white, #99e2b4, #88d4ab, #78c6a3, #67b99a, #56ab91, #469d89, #358f80, #248277, #14746f, #036666);
   background-size: 400% 400%;
@@ -1413,19 +1439,22 @@ BAR-CHART
   }
 }
 /* Fin animacion gradiente de footer*/
+/* columnas de footer*/
 .foot .col {
   width: 50%;
 }
 
+/* formulario suscripción a newsleter footer*/
 .formularios {
   margin-top: 2%;
 }
 
+/* iframe mapa de footer*/
 .mapita {
   margin-top: 2%;
 }
 
-/* gift el bicho saltando */
+/* gift el bicho saltando en la columna 3 */
 .libri {
   align-self: flex-end;
   align-items: flex-end;
@@ -1434,6 +1463,8 @@ BAR-CHART
   overflow-x: hidden;
 }
 
+/** =====================* Fin de Footer ========================*/
+/** =====================* Comienzo de botones universales ========================*/
 /* botones*/
 .custom-btnn {
   width: 130px;
@@ -1855,6 +1886,7 @@ BAR-CHART
   width: 100%;
 }
 
+/** =====================* Fin de botones universales ========================*/
 .btn-11 {
   background-image: linear-gradient(to top left, #4f000b, #720026, #ce4257, #ff7f51, #ff9b54);
   color: black;
