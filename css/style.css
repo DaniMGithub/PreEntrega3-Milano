@@ -48,6 +48,25 @@
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237400b8'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
+.carti-loca {
+  background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, black, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1, #64dfdf, #72efdd, #80ffdb);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
 .page-header {
   background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
   color: black;
@@ -379,6 +398,47 @@ h2{
 
 .tab-label-4 {
   z-index: 2;
+}
+
+/*cagadas*/
+.tab-label-5 {
+  z-index: 4;
+}
+
+.tab-label-6 {
+  z-index: 4;
+}
+
+.tab-label-7 {
+  z-index: 3;
+}
+
+.tab-label-8 {
+  z-index: 2;
+}
+
+.tab-label-9 {
+  z-index: 4;
+}
+
+.tab-label-10 {
+  z-index: 4;
+}
+
+.tab-label-11 {
+  z-index: 3;
+}
+
+.tab-label-12 {
+  z-index: 2;
+}
+
+.tab-label-13 {
+  z-index: 4;
+}
+
+.tab-label-14 {
+  z-index: 4;
 }
 
 .tabs input:checked + label {
@@ -1008,6 +1068,17 @@ h2{
 
 /** =====================* Fin de Pagina about ========================*/
 /** =====================* Comienzo de Pagina calidad ========================*/
+/* graficos pagina calidad */
+.encuesta {
+  background-image: linear-gradient(to top left, #f08080, #f4978e, #f8ad9d, #fbc4ab, #ffdab9);
+  color: black;
+  margin-top: 3%;
+  text-align: justify;
+}
+.encuesta .encuestar {
+  text-align: center;
+}
+
 /* graficos pagina calidad */
 .grafico-container {
   margin-bottom: 3%;

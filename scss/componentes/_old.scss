@@ -288,6 +288,45 @@ p {
 .tab-label-4 {
   z-index: 2;
 }
+/*cagadas*/
+.tab-label-5 {
+  z-index: 4;
+}
+
+.tab-label-6 {
+  z-index: 4;
+}
+
+.tab-label-7 {
+  z-index: 3;
+}
+
+.tab-label-8 {
+  z-index: 2;
+}
+.tab-label-9 {
+  z-index: 4;
+}
+
+.tab-label-10 {
+  z-index: 4;
+}
+
+.tab-label-11 {
+  z-index: 3;
+}
+
+.tab-label-12 {
+  z-index: 2;
+}
+.tab-label-13{
+  z-index: 4;
+}
+
+.tab-label-14 {
+  z-index: 4;
+}
+
 
 .tabs input:checked + label {
   background: #fefefe;
@@ -909,9 +948,21 @@ text-align: justify;
 /** =====================* Comienzo de Pagina calidad ========================*/
 /* graficos pagina calidad */
 
+  .encuesta{
+    @include color-scheme($scheme-suave ...);
+    margin-top: 3%;
+  text-align: justify;
+    .encuestar{
+    
+    text-align: center;}
+  }
+
+/* graficos pagina calidad */
 .grafico-container {
   margin-bottom: 3%;
 }
+
+
 
 .titular {
 display: block;
