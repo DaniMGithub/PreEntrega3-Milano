@@ -2,7 +2,6 @@
 .page-header{   
    
     @include color-scheme($scheme-bg ...);
-
     overflow-x: hidden;
    
 }
@@ -15,4 +14,17 @@ header{
 
 .whity{
     margin-top: 25%;
+}
+
+.efecti{
+     @include color-scheme($scheme-serenytea ...);
+}
+.curso{
+    margin: 3%;
+    padding: 3%;
+}
+
+.cartas{
+    margin: 1%;
+  
 }
