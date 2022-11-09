@@ -15,6 +15,16 @@
   text-decoration: none;
 }
 
+@media (min-width: 600px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 800px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
 .carousel {
   margin-bottom: 2%;
 }
@@ -124,43 +134,6 @@ body {
 }
 
 /** ==================== * animacion que ya no utilizaré, antes era de header =======================*/
-/* animación gradiente del header 
-header {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        overflow-x: hidden;
-
-    }
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-/* h1 y h2 del header 
-h1{
-    margin: 1%;
-    margin-left: 1%;
-    color: greenyellow;
-}
-h2{
-     margin: 1%;
-     margin-left: 1%;
-}
-/* gift el bicho saltando 
-.bicho{
-   align-self: end;
-   width: 20%;
-   overflow-x: hidden;
-
-   } */
 /** ==================== * barra de navegación configuración general - inicio =======================*/
 /* nav */
 .navbar ul li:hover > ul {
@@ -609,6 +582,7 @@ h2{
   margin-right: 2%;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: small;
 }
 
 .section {

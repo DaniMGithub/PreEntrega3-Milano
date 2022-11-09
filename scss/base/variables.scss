@@ -7,3 +7,12 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
+
+
+@media (min-width: 600px){
+  p{
+ font-size:1.15rem}}
+ 
+ @media (min-width: 800px){
+  p{
+ font-size:1.5rem}}
