@@ -221,7 +221,7 @@ h2{
   }
 }
 /* Fin animacion*/
-/**  tabla de la pagina servicios */
+/**  tabla uno de la pagina servicios */
 .titlen {
   text-align: center;
   padding-top: 3%;
@@ -234,22 +234,18 @@ h2{
   color: #fefefe;
   overflow-y: hidden;
 }
-
-a {
+.body a {
   text-decoration: none;
 }
-
-a.link {
+.body a a.link {
   color: #4477CC;
   -webkit-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s;
 }
-
-a.link:hover {
+.body a a.link a.link:hover {
   color: lightseagreen;
 }
-
-p {
+.body a a.link a.link:hover p {
   margin-bottom: 10px;
 }
 
@@ -287,6 +283,42 @@ p {
 
 .tabs input#tab-4 {
   left: 75%;
+}
+
+.tabs input#tab-5 {
+  left: 25%;
+}
+
+.tabs input#tab-6 {
+  left: 50%;
+}
+
+.tabs input#tab-7 {
+  left: 75%;
+}
+
+.tabs input#tab-8 {
+  left: 50%;
+}
+
+.tabs input#tab-9 {
+  left: 75%;
+}
+
+.tabs input#tab-10 {
+  left: 25%;
+}
+
+.tabs input#tab-11 {
+  left: 50%;
+}
+
+.tabs input#tab-13 {
+  left: 75%;
+}
+
+.tabs input#tab-14 {
+  left: 25%;
 }
 
 .tabs label {
@@ -386,7 +418,17 @@ p {
 .tabs .tab-selector-1:checked ~ .content .content-1,
 .tabs .tab-selector-2:checked ~ .content .content-2,
 .tabs .tab-selector-3:checked ~ .content .content-3,
-.tabs .tab-selector-4:checked ~ .content .content-4 {
+.tabs .tab-selector-4:checked ~ .content .content-4,
+.tabs .tab-selector-5:checked ~ .content .content-5,
+.tabs .tab-selector-6:checked ~ .content .content-6,
+.tabs .tab-selector-7:checked ~ .content .content-7,
+.tabs .tab-selector-8:checked ~ .content .content-8,
+.tabs .tab-selector-9:checked ~ .content .content-9,
+.tabs .tab-selector-10:checked ~ .content .content-10,
+.tabs .tab-selector-11:checked ~ .content .content-11,
+.tabs .tab-selector-12:checked ~ .content .content-12,
+.tabs .tab-selector-13:checked ~ .content .content-13,
+.tabs .tab-selector-14:checked ~ .content .content-14 {
   z-index: 100;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
