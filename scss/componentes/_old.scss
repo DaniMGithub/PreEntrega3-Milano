@@ -136,16 +136,17 @@ h2{
 
 /**  tabla de la pagina servicios */
 
-.titulino h2{
+.titlen{
   text-align: center;
-  margin-top: 3%;
+  padding-top: 3%;
 }
+
 .body {
   background: #232222;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   text-align: center;
   color: #fefefe;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 a {
