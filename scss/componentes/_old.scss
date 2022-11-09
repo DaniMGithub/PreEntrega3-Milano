@@ -5,6 +5,7 @@ body{
    
 }
 
+
 /* animación gradiente del header 
 header {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -107,7 +108,27 @@ h2{
 .mibtn:hover{
     background-color: lightseagreen;
 }
-
+/** ==================== * animacion de la pagina servicios =======================*/
+.carti-loki{
+  background: linear-gradient(-25deg, $scheme-formal, $scheme-tierra);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+ }
+ 
+ @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+ 
+ }
+ /* Fin animacion*/
 
 /** ==================== * tabla de la pagina servicios =======================*/
 
@@ -373,9 +394,77 @@ p {
 }
 
 /** ==================== * Pagina calidad ======================*/
+
+  /* Animacion de organigrama */
+
+ .organitograma{
+  background: linear-gradient(-25deg, $scheme-formal, $scheme-tierra);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+ }
+ 
+ @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+ 
+ }
+ /* Fin animacion*/
+
+   /* Animacion de plan estrategico */
+
+   .plan{
+    background: linear-gradient(-25deg, $scheme-arcoiris, $scheme-pinterest);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+   }
+   
+   @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   
+   }
+   /* Fin animacion*/
+
+   /* Animacion de politica */
+
+   .politica{
+    background: linear-gradient(-25deg,$scheme-rosabb, $scheme-arcoiris);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+   }
+   
+   @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   
+   }
+   /* Fin animacion*/
 .politica{
   margin-top: 3%;
-  background-color: lightpink;
   text-align: justify;
 }
 
@@ -384,7 +473,6 @@ p {
 }
 .plan{
   margin-top: 5%;
-  background-color: lightyellow;
   text-align: justify;
 }
 
@@ -1118,7 +1206,7 @@ BAR-CHART
 
 /* FIN graficos pagina calidad */
 
-/* Formulario de contacto página Contacto 
+/* Formulario de contacto página Contacto  con animacion gradiente*/
 
 .contacto{
   margin-top: 5%;
@@ -1139,23 +1227,32 @@ BAR-CHART
         background-position: 0% 50%;
     }
 
-    h2{
-        text-align: center;
-    }
-
-    .btn btn-primary{
-
-    }
-
 }
+/* Fin formulario de contacto página Contacto  con animacion gradiente*/
 
+/* Footer con animacion gradiente*/
 
-
-/* footer */
 .foot{
-      background-color: lightgreen;
-      overflow-x: hidden;
+     background: linear-gradient(-45deg, $scheme-babypastel, $scheme-verde);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+/* Fin animacion gradiente de footer*/
+
 .foot .col{
  width: 50%;
 }

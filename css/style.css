@@ -64,17 +64,17 @@ header .rosita {
 
 nav {
   background-image: linear-gradient(to top left, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4);
-  color: black;
+  color: white;
 }
 nav li {
   background-image: linear-gradient(to top left, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4);
-  color: black;
+  color: white;
   text-decoration-color: #ff758f;
   border-radius: 5px;
 }
 nav li a {
   background-image: linear-gradient(to top left, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4);
-  color: black;
+  color: white;
   text-decoration-color: #ff758f;
   border-radius: 5px;
 }
@@ -182,6 +182,26 @@ h2{
   background-color: lightseagreen;
 }
 
+/** ==================== * animacion de la pagina servicios =======================*/
+.carti-loki {
+  background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, white, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
 /** ==================== * tabla de la pagina servicios =======================*/
 .titulino h2 {
   text-align: center;
@@ -443,9 +463,68 @@ p {
 }
 
 /** ==================== * Pagina calidad ======================*/
+/* Animacion de organigrama */
+.organitograma {
+  background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, white, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
+/* Animacion de plan estrategico */
+.plan {
+  background: linear-gradient(-25deg, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc, white, #ffffff, #84dcc6, #a5ffd6, #ffa69e, #ff686b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
+/* Animacion de politica */
+.politica {
+  background: linear-gradient(-25deg, white, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4, white, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion*/
 .politica {
   margin-top: 3%;
-  background-color: lightpink;
   text-align: justify;
 }
 
@@ -455,7 +534,6 @@ p {
 
 .plan {
   margin-top: 5%;
-  background-color: lightyellow;
   text-align: justify;
 }
 
@@ -1282,45 +1360,47 @@ BAR-CHART
 }
 
 /* FIN graficos pagina calidad */
-/* Formulario de contacto página Contacto 
-
-.contacto{
+/* Formulario de contacto página Contacto  con animacion gradiente*/
+.contacto {
   margin-top: 5%;
   margin-bottom: 5%;
-    background: linear-gradient(-45deg, #cdb4db, lightpink, lightyellow);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #cdb4db, lightpink, lightyellow);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-
-    h2{
-        text-align: center;
-    }
-
-    .btn btn-primary{
-
-    }
-
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
-
-/* footer */
+/* Fin formulario de contacto página Contacto  con animacion gradiente*/
+/* Footer con animacion gradiente*/
 .foot {
-  background-color: lightgreen;
+  background: linear-gradient(-45deg, white, #b0f2b4, #baf2e9, #bad7f2, #f2bac9, #f2e2ba, white, #99e2b4, #88d4ab, #78c6a3, #67b99a, #56ab91, #469d89, #358f80, #248277, #14746f, #036666);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   overflow-x: hidden;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Fin animacion gradiente de footer*/
 .foot .col {
   width: 50%;
 }
@@ -1349,17 +1429,17 @@ BAR-CHART
 
 .btn-3:hover {
   background-image: linear-gradient(to top left, #99e2b4, #88d4ab, #78c6a3, #67b99a, #56ab91, #469d89, #358f80, #248277, #14746f, #036666);
-  color: black;
+  color: white;
 }
 
 .btn-5 {
   background-image: linear-gradient(to top left, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
-  color: black;
+  color: white;
 }
 
 .btn-5:hover {
   background-image: linear-gradient(to top left, #05668d, #028090, #00a896, #02c39a, #f0f3bd);
-  color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
