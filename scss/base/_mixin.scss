@@ -7,7 +7,7 @@ $sserif1: font-family('Montserrat', sans-serif);
 $sserif2: font-family('Quicksand', sans-serif);
 $china: font-family('Noto Serif TC', serif);
 
-/*Comienza mixin para media queris */
+                                    /*Comienza mixin para media queris */
 
 /* 1) mapa de media queris asociados con nombres para breakpoints mobile y tablet */
  
@@ -29,7 +29,7 @@ $china: font-family('Noto Serif TC', serif);
 /* 2) carta base con fondo de guias.html cambia de color según dispositivos por media queris*/
 .carti-loca{
     background: linear-gradient(-25deg, $scheme-formal, $scheme-azulvioleta);
-    background-size: 400% 400%;
+    background-size: 400%;
     animation: gradient 15s ease infinite;
     overflow-x: hidden;
    }

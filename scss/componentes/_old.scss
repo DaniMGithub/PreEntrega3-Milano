@@ -1185,7 +1185,7 @@ p.center-date {
   font-size: inherit;
 }
 /**************************
-BAR-CHART
+Grafico que no use pero lo guardo aca por las dudas
 **************************
 .grafico.bar-chart {
   background: #3468AF;
@@ -1263,7 +1263,7 @@ BAR-CHART
 .contacto{
   margin-top: 5%;
   margin-bottom: 5%;
-    background: linear-gradient(-45deg, #cdb4db, lightpink, lightyellow);
+  background: linear-gradient(-25deg, $scheme-babypastel, $color-loco, $color-loquis);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }

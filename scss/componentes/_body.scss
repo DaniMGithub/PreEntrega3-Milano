@@ -1,4 +1,5 @@
 
+/**/
 .page-header{   
    
     @include color-scheme($scheme-bg ...);
@@ -11,14 +12,17 @@ header{
         width: 100%;
     }
 }
-
+/**/
 .whity{
     margin-top: 25%;
 }
-
+/**/
 .efecti{
      @include color-scheme($scheme-serenytea ...);
 }
+
+
+/*index.html modificaciones en su body*/
 .curso{
     margin: 3%;
     padding: 3%;
