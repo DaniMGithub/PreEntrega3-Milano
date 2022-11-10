@@ -1,13 +1,4 @@
-/*para ir cambiando fuentes de letras, no funciona peor lo dejo acá para el futuro*/
-@use "sass:string";
-
-
-$serif: font-family('Roboto Slab', serif);
-$sserif1: font-family('Montserrat', sans-serif);
-$sserif2: font-family('Quicksand', sans-serif);
-$china: font-family('Noto Serif TC', serif);
-
-                                    /*Comienza mixin para media queris */
+ /*Comienza mixin para media queris */
 
 /* 1) mapa de media queris asociados con nombres para breakpoints mobile y tablet */
  

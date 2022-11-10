@@ -2,7 +2,6 @@
 /*definiendo colores solos*/
 /*haciendo gradientes de colores*/
 /*definiendo esquemas de colores*/
-/*para ir cambiando fuentes de letras, no funciona peor lo dejo acá para el futuro*/
 /*Comienza mixin para media queris */
 /* 1) mapa de media queris asociados con nombres para breakpoints mobile y tablet */
 /* 2) carta base con fondo de guias.html cambia de color según dispositivos por media queris*/
@@ -54,7 +53,8 @@
 }
 
 /*fin mixin esquemas de colores*/
-/*mapa de media queris asociados con nombres para breakpoints mobile y tablet  este mapa se usa en MIXIN para cambiar los colores de fondo en guias.html*/ /*carrusel y cartas del index.html*/
+/*mapa de media queris asociados con nombres para breakpoints mobile y tablet  este mapa se usa en MIXIN para cambiar los colores de fondo en guias.html*/
+/*carrusel y cartas del index.html*/
 .carousel {
   margin-bottom: 2%;
 }
