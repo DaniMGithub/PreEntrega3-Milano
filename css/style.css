@@ -121,6 +121,11 @@ header .rosita {
   margin: 1%;
 }
 
+.class2350 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 nav {
   background-image: linear-gradient(to top left, #ff0a54, #ff477e, #ff5c8a, #ff7096, #ff85a1, #ff99ac, #fbb1bd, #f9bec7, #f7cad0, #fae0e4);
   color: white;
@@ -1479,7 +1484,6 @@ Grafico que no use pero lo guardo aca por las dudas
 /** =====================* Comienzo de Pagina contacto.html ========================*/
 /* Formulario de contacto página Contacto  con animacion gradiente*/
 .contacto {
-  margin-top: 5%;
   margin-bottom: 5%;
   background: linear-gradient(-25deg, white, #b0f2b4, #baf2e9, #bad7f2, #f2bac9, #f2e2ba, lightpink, #ff758f);
   background-size: 400% 400%;
