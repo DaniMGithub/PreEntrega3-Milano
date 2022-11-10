@@ -1,0 +1,16 @@
+/*mapa de media queris asociados con nombres para breakpoints mobile y tablet  este mapa se usa en MIXIN para cambiar los colores de fondo en guias.html*/
+ 
+@mixin devices ($breakpoint) { 
+  
+    @if $breakpoint == tablet {    
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}

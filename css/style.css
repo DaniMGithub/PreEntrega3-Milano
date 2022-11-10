@@ -1,53 +1,11 @@
 @charset "UTF-8";
-.txt-main {
-  font-size: 1em;
-  color: lightblue;
-  font-weight: 2px;
-  padding: 2%;
-  text-decoration: none;
-}
-
-.txt-resaltar {
-  font-size: 2em;
-  color: lightgreen;
-  font-weight: 2%;
-  padding: none;
-  text-decoration: none;
-}
-
-.carousel {
-  margin-bottom: 2%;
-}
-
-.cartas {
-  background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
-  color: black;
-  align-items: stretch;
-  height: 100%;
-}
-
-.col-sm {
-  border: 1px solid black;
-}
-
-.accordion-button:is(.collapsed)::after {
-  box-shadow: 3px;
-  background-color: lightblue;
-}
-
-.accordion-button:not(.collapsed)::after {
-  box-shadow: none;
-  background-color: lightblue;
-}
-
-.accordion-button:is(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f000b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237400b8'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
-
+/*definiendo colores solos*/
+/*haciendo gradientes de colores*/
+/*definiendo esquemas de colores*/
+/*para ir cambiando fuentes de letras, no funciona peor lo dejo acá para el futuro*/
+/*Comienza mixin para media queris */
+/* 1) mapa de media queris asociados con nombres para breakpoints mobile y tablet */
+/* 2) carta base con fondo de guias.html cambia de color según dispositivos por media queris*/
 .carti-loca {
   background: linear-gradient(-25deg, white, #05668d, #028090, #00a896, #02c39a, #f0f3bd, black, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1, #64dfdf, #72efdd, #80ffdb);
   background-size: 400% 400%;
@@ -67,6 +25,70 @@
   }
 }
 /* Fin animacion*/
+@media only screen and (max-width: 680px) {
+  .carti-loca {
+    background: linear-gradient(-25deg, white, #b0f2b4, #baf2e9, #bad7f2, #f2bac9, #f2e2ba, white, #ffffff, #84dcc6, #a5ffd6, #ffa69e, #ff686b);
+  }
+}
+@media only screen and (max-width: 481px) {
+  .carti-loca {
+    background: aquamarine;
+  }
+}
+
+/*mixin esquemas de colores funciona!*/
+.txt-main {
+  font-size: 1em;
+  color: lightblue;
+  font-weight: 2px;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.txt-resaltar {
+  font-size: 2em;
+  color: lightgreen;
+  font-weight: 2%;
+  padding: none;
+  text-decoration: none;
+}
+
+/*fin mixin esquemas de colores*/
+/*mapa de media queris asociados con nombres para breakpoints mobile y tablet  este mapa se usa en MIXIN para cambiar los colores de fondo en guias.html*/ /*carrusel y cartas del index.html*/
+.carousel {
+  margin-bottom: 2%;
+}
+
+.cartas {
+  background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
+  color: black;
+  align-items: stretch;
+  height: 100%;
+}
+
+.col-sm {
+  border: 1px solid black;
+}
+
+/*acordeon de guias.html*/
+.accordion-button:is(.collapsed)::after {
+  box-shadow: 3px;
+  background-color: lightblue;
+}
+
+.accordion-button:not(.collapsed)::after {
+  box-shadow: none;
+  background-color: lightblue;
+}
+
+.accordion-button:is(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f000b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237400b8'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
 .page-header {
   background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
   color: black;
@@ -1559,8 +1581,9 @@ BAR-CHART
 /** =====================* Comienzo de botones universales ========================*/
 /* botones*/
 .custom-btnn {
-  width: 130px;
-  height: 40px;
+  flex-wrap: wrap;
+  width: 8.125rem;
+  height: 2.5rem;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
@@ -1765,9 +1788,9 @@ BAR-CHART
 
 /* 5 */
 .btn-5 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
+  width: 8.125rem;
+  height: 2.5rem;
+  line-height: 2.625rem;
   padding: 0;
   border: none;
   background: rgb(255, 27, 0);
@@ -1994,21 +2017,29 @@ BAR-CHART
 .btn-11 {
   background-image: linear-gradient(to top left, #4f000b, #720026, #ce4257, #ff7f51, #ff9b54);
   color: black;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .btn-3:hover {
   background-image: linear-gradient(to top left, #f9dbbd, #ffa5ab, #da627d, #a53860, #450920);
   color: black;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .btn-5 {
   background-image: linear-gradient(to top left, #f08080, #f4978e, #f8ad9d, #fbc4ab, #ffdab9);
   color: black;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .btn-5:hover {
   background-image: linear-gradient(to top left, #590d22, #800f2f, #a4133c, #c9184a, #ff4d6d, #ff758f, #ff8fa3, #ffb3c1, #ffccd5, #fff0f3);
   color: black;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */

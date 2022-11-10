@@ -1,3 +1,4 @@
+/*definiendo colores solos*/
 @use 'sass:list';
 
 $color-natural:black;
@@ -8,7 +9,7 @@ $color-loquis: #ff758f;
 $color-random: lightblue;
 $accordion-color: lightyellow;
 
-
+/*haciendo gradientes de colores*/
 @mixin color-scheme($text, $bg){
 
 @if list.length($bg) == 1{
@@ -19,7 +20,7 @@ $accordion-color: lightyellow;
     }
     color: $text;
 }
-
+/*definiendo esquemas de colores*/
 $scheme-solo: $color-random;
 $scheme-uno: $color-natural, ($color-loco, $color-naturalis);
 $scheme-gradiente: black, (#4f000b , #720026 , #ce4257 , #ff7f51 , #ff9b54);

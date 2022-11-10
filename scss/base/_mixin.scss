@@ -1,3 +1,4 @@
+/*para ir cambiando fuentes de letras, no funciona peor lo dejo acá para el futuro*/
 @use "sass:string";
 
 
@@ -6,7 +7,76 @@ $sserif1: font-family('Montserrat', sans-serif);
 $sserif2: font-family('Quicksand', sans-serif);
 $china: font-family('Noto Serif TC', serif);
 
+/*Comienza mixin para media queris */
 
+/* 1) mapa de media queris asociados con nombres para breakpoints mobile y tablet */
+ 
+@mixin devices ($breakpoint) { 
+  
+    @if $breakpoint == tablet {    
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}
+
+/* 2) carta base con fondo de guias.html cambia de color según dispositivos por media queris*/
+.carti-loca{
+    background: linear-gradient(-25deg, $scheme-formal, $scheme-azulvioleta);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+   }
+   
+   @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   
+   }
+   /* Fin animacion*/
+
+// aqui se dispone el cambio de color para tablet
+.carti-loca {
+ 
+  @include devices(tablet) {
+    background: linear-gradient(-25deg, $scheme-babypastel, $scheme-pinterest);
+    
+    }
+ // aqui se dispone el cambio de color para celular
+  @include devices(mobile) {
+        background: aquamarine;
+          
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mixin esquemas de colores funciona!*/
 
 @mixin txt-principal ($size, $color, $destacado, $pad, $dec) {
     font-size: $size;
@@ -26,4 +96,4 @@ $china: font-family('Noto Serif TC', serif);
     @include txt-principal(2em, $color-naturalo, 2% , none, none, );
 }
 
-
+/*fin mixin esquemas de colores*/

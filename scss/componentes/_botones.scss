@@ -1,17 +1,28 @@
+
 .btn-11{
     @include color-scheme($scheme-gradiente ...);
+    overflow: hidden;
+    flex-wrap: wrap;
    
 }
 .btn-3:hover{
     @include color-scheme($scheme-rosaformal ...);
-  
+    overflow: hidden;
+    flex-wrap: wrap;
+    
    
 }
 
 .btn-5{
     @include color-scheme($scheme-suave...);
+    overflow: hidden;
+    flex-wrap: wrap;
+    
 }
 .btn-5:hover{
         @include color-scheme($scheme-bg ...);
+        overflow: hidden;
+        flex-wrap: wrap;
+       
     }
 
