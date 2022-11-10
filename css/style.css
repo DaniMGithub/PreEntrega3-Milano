@@ -120,7 +120,11 @@ nav li :hover {
 body {
   background-color: lightcyan;
   font-family: "Mulish", sans-serif;
-  overflow-x: hidden;
+}
+
+.novedades {
+  padding: 0%;
+  align-content: flex-end;
 }
 
 /** ==================== * animacion que ya no utilizaré, antes era de header =======================*/
@@ -1524,19 +1528,25 @@ BAR-CHART
 /* formulario suscripción a newsleter footer*/
 .formularios {
   margin-top: 2%;
+  margin-left: 2%;
 }
 
 /* iframe mapa de footer*/
 .mapita {
   margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 1%;
 }
 
-/* gift el bicho saltando en la columna 3 */
+/* gift de libro footer  */
 .libri {
+  display: flex;
+  flex-direction: column;
   align-self: flex-end;
   align-items: flex-end;
   text-align: left;
-  width: 40%;
+  align-content: center;
+  width: 30%;
   overflow-x: hidden;
 }
 

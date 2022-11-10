@@ -351,32 +351,38 @@
     </article>
       <!-- Fin comentarios -->
     
-<!-- Footer -->
-      <footer class="container-fluid foot" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="row">
-          <div class="col-sm-6 mapita">
-          <div class="embed-responsive embed-responsive-21by9">       
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.2922926156743895!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses!2sar!4v1666466278743!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Dirección Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francia</p>
+<!-- Footer nuevo -->
+<footer class="footer container-fluid foot" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+  <div class="row">
+    
+    <div class="col-sm-3 formularios">
+      <form>
+          <div class="mb-3 align-items-self-end">        
+            <label for="exampleInputEmail1" class="form-label">Suscribete a nuestro newsletter!</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu email.</div>
+            <button class="custom-btn custom-btnn btn-8"><span>Enviar</span></button>
+        </div>
+      </form>
+  </div>
+       <!--libro-->
+       <div class="col-sm-4 libri d-none d-sm-block d-md-block">
+        <img alt="gif de libro entusiasmado" class="libri" style="display: block; height: auto !important; border="0" hspace="0" vspace="0" src="https://media.giphy.com/media/QWRbnbKwghRE0GbAQx/giphy.gif">     
+        <p>BC Lorem - Todos los derechos reservados ©</p>
+      </div> 
+    <!--fin libro--> 
+        <!--mapa-->
+        <div class="col-sm-5 mapita d-none d-sm-block d-md-block">
+          <div class="embed-responsive embed-responsive-21by9"> 
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.96651940684!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses!2sar!4v1668084316443!5m2!1ses!2sar" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-          <div class="col-sm-3 formularios">
-            <form>
-                <div class="mb-3 align-items-self-end">        
-                  <label for="exampleInputEmail1" class="form-label">Suscribete a nuestro newsletter!</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Nunca compartiremos tu email.</div>
-                  <button class="custom-btn custom-btnn btn-8"><span>Enviar</span></button>
-              </div>
-            </form>
-        </div>
-          <div class="col-sm-3 libri d-none d-sm-block d-md-block">
-            <img alt="" class="libri" style="display: block; height: auto !important; border="0" hspace="0" vspace="0" src="https://media.giphy.com/media/QWRbnbKwghRE0GbAQx/giphy.gif">
-            <p class="d-none d-sm-block d-md-block">BC Lorem - Todos los derechos reservados ©</p>
-          </div>        
-        </div>
-        </div>
-    </footer>
+           <!--fin mapa-->
+  </div>
+  </div>
+</footer>
+</section>
+<!-- fin nuevo Footer -->
 </section>
       <!-- JavaScript para animaciones de https://michalsnik.github.io/aos/ -->    
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
