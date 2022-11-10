@@ -4,6 +4,10 @@ body{
   font-family: 'Mulish', sans-serif;
 
 }
+
+.cartina{
+  overflow-y: hidden;
+}
 .novedades{
   padding: 0%;
   align-content: flex-end;
@@ -1350,7 +1354,11 @@ BAR-CHART
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 1%;
+    overflow:hidden;
+
+    
 }
+
 
 /* gift de libro footer  */
 .libri{
