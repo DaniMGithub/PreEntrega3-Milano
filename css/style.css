@@ -508,77 +508,47 @@ body {
 /* fin tabla*/
 /** ==================== * fin pagina servicios =======================*/
 /** ==================== * Pagina historia.html =======================*/
-/* comienzo de linea de tiempo*/
-.timeline {
-  position: relative;
-  display: block;
-  background-color: #f00;
-  height: 4px;
-  margin: 200px 50px;
+/*LINEA DE TIEMPO NUEVA*/
+.timelinenew div {
+  width: 300px;
+  margin: auto;
 }
 
-.timeline::before, .timeline::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 10px;
-  border: 10px solid #f00;
+.timelinenew p {
+  border-top: 2px dashed;
+  border-color: blue !important;
+  margin: 0;
+  padding: 30px;
 }
 
-.timeline::before {
-  left: -20px;
+.timelinenew p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
 }
 
-.timeline::after {
-  right: -10px;
-  border: 10px solid transparent;
-  border-radius: 30px;
-  border-right: 0;
-  border-left: 20px solid #f00;
+.timelinenew p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
 }
 
-.timeline li {
-  position: relative;
-  display: block;
-  float: left;
-  width: 120px;
-  transform: rotate(-45deg);
-  top: -65px;
+.timelinenew p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
-.timeline li::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: -30px;
-  border: 3px solid #f00;
-  border-radius: 15px;
-  width: 10px;
-  height: 10px;
-  background: #F0F0F0;
+.timelinenew p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.timeline li span {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: -100px;
-  width: 150px;
-}
-
-.timeline li:hover::before {
-  border: 4px solid #0f0;
-}
-
-.timeline li:hover span {
-  display: block;
-  transform: rotate(45deg);
-}
-
-/* fin linea de tiempo*/
+/*FIN*/
 /** comienzo Pagina historia colores */
 .margen {
   margin: 2%;
@@ -668,7 +638,7 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1rem;
 }
 
 /** ==================== * FIn Pagina historia.html =======================*/
